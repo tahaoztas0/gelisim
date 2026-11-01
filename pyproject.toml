@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "citygml-audit"
+version = "0.1.0"
+description = "Open-source structural and geometry checks for CityGML files"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "CityGML Audit contributors"}]
+keywords = ["CityGML", "GML", "geospatial", "geometry", "validation"]
+
+[project.scripts]
+citygml-audit = "citygml_audit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
